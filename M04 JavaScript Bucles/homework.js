@@ -6,15 +6,15 @@ function obtenerMayor(x, y) {
     // Si son iguales, retornar cualquiera de los dos.
     // Tu código:
    if (x == y) {
-      return(x);
+      console.log((x));
    } else if (x < y) {
-      return(y);
+      console.log((y));
    } else if (x > y) {
-      return(x);
+      console.log((x));
    }
    }
 
-   console.log((obtenerMayor(8, 9)));
+   (obtenerMayor(8, 9));
  
  function mayoriaDeEdad(edad) {
     // Determinar si la persona puede ingresar al evento según su edad.
@@ -26,7 +26,8 @@ function obtenerMayor(x, y) {
     } else {
       return ("Not allowed");
     }
- }
+   }
+
 
  console.log(mayoriaDeEdad(18));
  
@@ -79,9 +80,7 @@ function obtenerMayor(x, y) {
     return idioma;
  }
  console.log(saludo(1));
- console.log(saludo(2));
- console.log(saludo(3));
- console.log(saludo(4));
+
 
 
 
@@ -120,10 +119,7 @@ function obtenerMayor(x, y) {
  }
 
  console.log(colors(1));
- console.log(colors(2));
- console.log(colors(3));
- console.log(colors(4));
- console.log(colors(5));
+
 
  
  function esDiezOCinco(num) {
@@ -138,8 +134,6 @@ function obtenerMayor(x, y) {
 }
 
 console.log(esDiezOCinco(7));
-console.log(esDiezOCinco(5));
-console.log(esDiezOCinco(10));
 
  function estaEnRango(num) {
     // Retornar true si "num" es menor que 50 y mayor que 20.
@@ -153,9 +147,7 @@ console.log(esDiezOCinco(10));
  }
  
 console.log(estaEnRango(18));
-console.log(estaEnRango(21));
-console.log(estaEnRango(49));
-console.log(estaEnRango(52));
+
 
 
  function esEntero(num) {
@@ -173,10 +165,7 @@ console.log(estaEnRango(52));
   }
 
 console.log(esEntero(5));
-console.log(esEntero(5.88));
-console.log(esEntero(-5));
-console.log(esEntero(-5.99));
-console.log(esEntero(0));
+
 
 
  
@@ -198,7 +187,6 @@ console.log(esEntero(0));
  }
 
 console.log(fizzBuzz(15));
-console.log(fizzBuzz(23));
 
 
  
@@ -225,10 +213,7 @@ console.log(fizzBuzz(23));
    }
 
    console.log(operadoresLogicos(3, -2, 1));
-   console.log(operadoresLogicos(1, -2, 1));
-   console.log(operadoresLogicos(6, 3, 8));
-   console.log(operadoresLogicos(0, 0, 0));
-   console.log(operadoresLogicos(2, 2, 2));
+ 
 
 
  
@@ -249,7 +234,6 @@ console.log(fizzBuzz(23));
  }
  
 console.log(esPrimo(2));
-console.log(esPrimo(1));
 
  function esVerdadero(valor) {
     // Si "valor" es verdadero retornar "Soy verdadero".
@@ -262,7 +246,6 @@ console.log(esPrimo(1));
     }
  }
  console.log((esVerdadero("falso")));
- console.log((esVerdadero("verdadero")));
 
 
 
@@ -282,9 +265,6 @@ Cadena:       n u m
  }
 
 console.log(tieneTresDigitos(267));
-console.log(tieneTresDigitos(67));
-console.log(tieneTresDigitos(100));
-console.log(tieneTresDigitos(999));
 
 
  
@@ -302,9 +282,7 @@ console.log(tieneTresDigitos(999));
  }
 
  console.log(doWhile(2));
- console.log(doWhile(7));
- console.log(doWhile(12));
- console.log(doWhile(17));
+
 
  /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
 /* module.exports = {

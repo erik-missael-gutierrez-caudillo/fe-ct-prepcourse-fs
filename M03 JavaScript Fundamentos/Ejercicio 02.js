@@ -1,49 +1,49 @@
 /*⚠️ NO MODIFIQUES EL NOMBRE DE LAS DECLARACIONES ⚠️*/
 /*2️⃣ EJERCICIO 02 2️⃣*/
 
-function devolverString() {
+function devolverString(str) {
     // Debe retornar un string.
     // Tu código:
- console.log("string");
+ return(str);
  }
- devolverString("Hi World");
+ console.log(devolverString("Henry"));
  
  // ⛔️ "X" e "Y" son números.
  
  function suma(x, y) {
     // Retorna el resultado de su suma.
     // Tu código:
-    console.log(x - y);
+    return(x + y);
  }
-suma(7, 9);
+console.log(suma(7, 9));
 
  function resta(x, y) {
     // Retorna el resultado de la resta.
     // Tu código:
-    console.log(x - y);
+    return(x - y);
  }
- resta(9, 8);
+ console.log(resta(9, 8));
  
  function divide(x, y) {
     // Retorna el resultado de su división.
     // Tu código:
-    console.log(x / y);
+    return(x / y);
  }
- divide(2, 1);
+ console.log(divide(2, 1));
  
  function multiplica(x, y) {
     // Retorna el resultado de su multiplicación.
     // Tu código:
- console.log(x * y);
+ return(x * y);
  }
-multiplica(8, 7);
+console.log(multiplica(8, 7));
  
  function obtenerResto(x, y) {
     // Obten el resto de la división de "x" entre "y".
     // Tu código:
-    console.log(x % y);
+    return(x % y );
  }
- obtenerResto(7, 9);
+ console.log(obtenerResto(7, 2));
 
  
 
