@@ -13,21 +13,21 @@ console.log(elevarAlCuadrado(4));
 function elevarAlCubo(num) {
    // Retorna el valor de "num" elevado al cubo.
    // Tu código:
-   return(Math.pow(num, 4));
+   return(Math.pow(num, 3));
 }
 console.log(elevarAlCubo(8));
 
 function elevar(num, exponent) {
    // Retorna el valor de "num" elevado al exponente "exponent".
    // Tu código:
-   return(Math.pow(num, exponent));
+   return(Math.pow(num,  exponent));
 }
-console.log(elevar(5, 2));
+console.log(elevar(2, 3));
 
 function redondearNumero(num) {
    // Redondea "num" al entero más próximo y retórnalo.
    // Tu código:
-  return(Math.ceil(num));
+  return(Math.round(num));
 }
 console.log(redondearNumero(0.1));
 
