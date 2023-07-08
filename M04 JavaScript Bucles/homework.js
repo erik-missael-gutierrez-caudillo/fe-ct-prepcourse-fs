@@ -109,26 +109,26 @@ colors("yellow");
     // De lo contrario, retornar false.
     // Tu código:
    if (num == 5 || num == 10){
-   return("true");
+   console.log("true");
  } else {
-   return("false");
+   console.log("false");
  }
 }
 
-console.log(esDiezOCinco(7));
+esDiezOCinco(7);
 
  function estaEnRango(num) {
     // Retornar true si "num" es menor que 50 y mayor que 20.
     // De lo contrario, retornar false.
     // Tu código:
     if (num < 50 && num > 20) {
-      return("true");
+      console.log("true");
     } else {
-      return("false");
+      console.log("false");
     }
  }
  
-console.log(estaEnRango(21));
+estaEnRango(21);
 
 
 
@@ -140,13 +140,13 @@ console.log(estaEnRango(21));
     // De lo contrario, retorna false.
     // Tu código:
     if(Number.isInteger(num)) {
-      return("true");
+      console.log("true");
     } else {
-      return("false");
+      console.log("false");
     }
   }
 
-console.log(esEntero(5.8));
+esEntero(5.8);
 
 
 
@@ -158,17 +158,17 @@ console.log(esEntero(5.8));
     // De lo contrario, retorna false.
     // Tu código:
     if (num % 3 == 0 && num % 5 == 0) {
-      return("fizzbuzz");
+      console.log("fizzbuzz");
     } else if (num % 3 == 0) {
-      return("fizz");
+      console.log("fizz");
     } else if (num % 5 == 0) {
-      return("buzz");
+      console.log("buzz");
     } else {
-      return("false");
+      console.log("false");
     }
  }
 
-console.log(fizzBuzz(15));
+fizzBuzz(15);
 
 
  
@@ -181,20 +181,20 @@ console.log(fizzBuzz(15));
     // Si no se cumple ninguna de las condiciones anteriores, retornar false.
     // Tu código:
    if (num1 > num2 && num1 > num3 && Number.isInteger(num1)) {
-      return("Numero 1 es mayor y positivo");
+      console.log("Numero 1 es mayor y positivo");
    } else if (num1 < 0 || num2 < 0 ||
       +  num3 < 0) {
-      return("Hay negativos");
+      console.log("Hay negativos");
    } else if (num3 > num2 && num3 > num1) {
       return(num3 * 2);
    } else if (num1, num2, num3 == 0) {
-      return("Error");
+      console.log("Error");
    } else {
-      return("false");
+      console.log("false");
    }
    }
 
-   console.log(operadoresLogicos(-7, 2, 6));
+   operadoresLogicos(-7, 2, 6);
  
 
 
@@ -207,27 +207,27 @@ console.log(fizzBuzz(15));
     // [Nota]: los números negativos, 0 y 1 NO son números primos.
     // Tu código:
    if(num == 0 || num == 1 || num == 4) 
-   return "false";
+      console.log("false");
    for (var x = 2; x < num / 2; x++) {
       if (num % x === 0) 
-      return "false";
+   console.log("false");
    }
-   return "true";
+   console.log("true");
  }
  
-console.log(esPrimo(2));
+esPrimo(2);
 
  function esVerdadero(valor) {
     // Si "valor" es verdadero retornar "Soy verdadero".
     // Caso contrario, retornar "Soy falso".
     // Tu código:
     if(valor === "verdadero"){
-      return("Soy verdadero");
+   console.log("Soy verdadero");
     } else{
-      return("Soy falso");
+      console.log("Soy falso");
     }
  }
- console.log((esVerdadero("falso")));
+ esVerdadero("falso");
 
 
 
@@ -240,13 +240,13 @@ Cadena:       n u m
 Índices:      0 1 2 3 4 5 6 7 8 9
 */
     if(num > 99 && num < 1000) {
-      return("true");
+      console.log("true");
     } else {
-      return("false");
+      console.log("false");
     }
  }
 
-console.log(tieneTresDigitos(267));
+(tieneTresDigitos(267));
 
 
  
@@ -256,7 +256,7 @@ console.log(tieneTresDigitos(267));
     // Utilizar el bucle Do-While.
     // Tu código:
     i = 0;
-   do{
+   do {
       num += 5;
       i++;
    } while (i < 8);
