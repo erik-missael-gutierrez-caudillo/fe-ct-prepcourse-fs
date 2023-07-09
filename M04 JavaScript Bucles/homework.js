@@ -5,14 +5,10 @@ function obtenerMayor(x, y) {
     // Retornar el número más grande.
     // Si son iguales, retornar cualquiera de los dos.
     // Tu código:
-   if (x === y) {
-      console.log(x || y);
-   } else if (x < y) {
-      console.log(y);
-   } else if (x > y)
-      console.log(x);
-   }
-
+   if(x > y || x == y)console.log(x);
+   else console.log(y);
+};
+   obtenerMayor(9, 6);
    obtenerMayor(7, 9);
    obtenerMayor(8,8);
  
@@ -21,11 +17,9 @@ function obtenerMayor(x, y) {
     // Si tiene 18 años ó más debe retornar el string: "Allowed".
     // Caso contrario: "Not allowed".
     // Tu código:
-    if (edad >= 18) {
-    console.log("Allowed");
-    } else
-    console.log("Not allowed");
-   }
+    if (edad >= 18)console.log("Allowed");
+    else console.log("Not allowed");
+   };
    
  mayoriaDeEdad(17);
  mayoriaDeEdad(19);
@@ -37,13 +31,10 @@ function obtenerMayor(x, y) {
     // De lo contrario, presumimos que el usuario está "Offline".
     // Retornar el estado de conexión del usuario.
     // Tu código:
-   if (status == 1) {
-      console.log("Online");
-   } else if (status == 2) {
-      console.log("Away");
-   } else
-      console.log("Offline");
- }
+    if(status == 1)console.log("Online");
+    else if(status == 2)console.log("Away");
+    else console.log("Offline");
+ };
 
  conection(1);
  conection(2);
@@ -56,15 +47,11 @@ function obtenerMayor(x, y) {
     // Si "idioma" es "ingles", devuelve "Hello!".
     // Si "idioma" no es ninguno de los anteriores o es `undefined` devuelve "Hola!".
     // Tu código:
-    if(idioma == "aleman"){
-      console.log("Guten Tag!");
-    }else if (idioma == "mandarin") {
-      console.log("Ni Hao!");
-    }else if (idioma == "ingles") {
-      console.log("Hello!")
-    } else
-      console.log("Hola!");
-  }
+    if(idioma == "aleman")console.log("Guten Tag!");
+    else if (idioma == "mandarin")console.log("Ni Hao!");
+    else if (idioma == "ingles")console.log("Hello!")
+    else console.log("Hola!");
+  };
  
  
  saludo("aleman");
@@ -81,36 +68,20 @@ function obtenerMayor(x, y) {
     // Si no es ninguno de esos colores           --> "Color not found".
     // IMPORTANTE: utilizar el statement SWITCH.
     // Tu código:
-    if (color == "blue") {
-      console.log("This is blue");
-    } else if (color == "red") {
-      console.log("This is red");
-    }else if (color =="green") {
-      console.log("This is green");
-    }else if (color == "orange") {
-      console.log("This is orange");
-    } else 
-      console.log("Color not found");
- }
+    if (color == "blue" || color == "red" || color =="green" || color == "orange")console.log("This is " + color);
+     else console.log("Color not found");
+ };
 
 colors("blue");
-colors("red");
-colors("green");
-colors("orange");
-colors("gris");
+colors(" ");
  
  function esDiezOCinco(num) {
     // Retornar true si "num" es 10 o 5.
     // De lo contrario, retornar false.
     // Tu código:
-   if (num == 5 || num == 10){
-   console.log("true");
- } else {
-   console.log("false");
- }
-esDiezOCinco;
-}
-
+   if (num == 5 || num == 10)console.log("true");
+   else console.log("false");
+};
 esDiezOCinco(5);
 esDiezOCinco(7);
 
@@ -118,11 +89,9 @@ esDiezOCinco(7);
     // Retornar true si "num" es menor que 50 y mayor que 20.
     // De lo contrario, retornar false.
     // Tu código:
-    if (num < 50 && num > 20) {
-      console.log("true");
-    } else
-      console.log("false");
-     }
+    if (num < 50 && num > 20)console.log("true");
+     else console.log("false");
+     };
  
 estaEnRango(21);
 estaEnRango(20);
@@ -140,7 +109,7 @@ estaEnRango(20);
       console.log("true");
     } else 
       console.log("false");
-    }
+    };
 
 esEntero(5.8);
 esEntero(5);
@@ -164,12 +133,12 @@ esEntero("a");
       console.log("fizz");
     } else
       console.log("false");
-     }
-
+     };
 
 fizzBuzz(9);
 fizzBuzz(10);
 fizzBuzz(15);
+fizzBuzz(19);
 
 
  
@@ -192,7 +161,7 @@ fizzBuzz(15);
       console.log("Error");
    } else 
       console.log("false");
-      }
+      };
 
    operadoresLogicos(8, 2, 6);
    operadoresLogicos(-7, 2, 6);
@@ -218,7 +187,7 @@ fizzBuzz(15);
    console.log("false");
    }
    console.log("true");
- }
+ };
  
 esPrimo(2);
 esPrimo(4);
@@ -232,7 +201,7 @@ esPrimo(4);
    console.log("Soy verdadero");
     } else
       console.log("Soy falso");
-}
+};
  esVerdadero("verdadero");
  esVerdadero("falso");
 
@@ -250,7 +219,7 @@ Cadena:       n u m
       console.log("true");
     } else
       console.log("false");
-   }
+   };
 
 tieneTresDigitos(267);
 tieneTresDigitos(67);
@@ -268,8 +237,8 @@ tieneTresDigitos(67);
       i++;
    } while (i < 8);
    console.log(num);
- }
- doWhile(1);
+ };
+ console.log(doWhile(1));
 
 
  /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
