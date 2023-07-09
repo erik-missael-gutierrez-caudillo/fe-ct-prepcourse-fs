@@ -16,6 +16,7 @@ function obtenerMayor(x, y) {
    }
 
    obtenerMayor(7, 9);
+   obtenerMayor(8,8);
  
  function mayoriaDeEdad(edad) {
     // Determinar si la persona puede ingresar al evento según su edad.
@@ -31,7 +32,8 @@ function obtenerMayor(x, y) {
 
 
  console.log(mayoriaDeEdad(17));
- 
+ console.log(mayoriaDeEdad(19));
+
  function conection(status) {
     // El argumento "status" representa el estado de conexión de un usuario.
     // Si el estado es igual a 1, el usuario está "Online".
@@ -49,6 +51,8 @@ function obtenerMayor(x, y) {
    return status;
  }
 
+ conection(1);
+ conection(2);
  conection(3);
 
  function saludo(idioma) {
@@ -71,7 +75,10 @@ function obtenerMayor(x, y) {
  }
  
  
+ saludo("aleman");
+ saludo("mandarin");
  saludo("ingles");
+ saludo("frances");
 
 
 
@@ -103,8 +110,12 @@ function obtenerMayor(x, y) {
     return color;
  }
 
-colors("yellow");
- 
+colors("blue");
+colors("red");
+colors("green");
+colors("orange");
+colors("gris");
+
  function esDiezOCinco(num) {
     // Retornar true si "num" es 10 o 5.
     // De lo contrario, retornar false.
@@ -117,6 +128,7 @@ colors("yellow");
  return num;
 }
 
+esDiezOCinco(5);
 esDiezOCinco(7);
 
  function estaEnRango(num) {
@@ -132,6 +144,7 @@ esDiezOCinco(7);
  }
  
 estaEnRango(21);
+estaEnRango(20);
 
 
 
@@ -151,6 +164,9 @@ estaEnRango(21);
   }
 
 esEntero(5.8);
+esEntero(5);
+esEntero(8);
+esEntero(0);
 
 
 
@@ -173,7 +189,11 @@ esEntero(5.8);
     return num;
  }
 
+fizzBuzz(3);
 fizzBuzz(15);
+fizzBuzz(21);
+fizzBuzz(17);
+
 
 
  
@@ -200,8 +220,13 @@ fizzBuzz(15);
    return num1, num2, num3;
    }
 
+   operadoresLogicos(8, 2, 6);
    operadoresLogicos(-7, 2, 6);
- 
+   operadoresLogicos(1, 2, 6);
+   operadoresLogicos(0, 0, 0);
+   operadoresLogicos(1, 1, 1);
+
+
 
 
  
@@ -222,6 +247,8 @@ fizzBuzz(15);
  }
  
 esPrimo(2);
+esPrimo(4);
+
 
  function esVerdadero(valor) {
     // Si "valor" es verdadero retornar "Soy verdadero".
@@ -234,6 +261,7 @@ esPrimo(2);
     }
     return valor;
  }
+ esVerdadero("verdadero");
  esVerdadero("falso");
 
 
@@ -255,6 +283,7 @@ Cadena:       n u m
  }
 
 (tieneTresDigitos(267));
+(tieneTresDigitos(67));
 
 
  
