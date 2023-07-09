@@ -12,6 +12,7 @@ function obtenerMayor(x, y) {
    } else if (x > y) {
       console.log((x));
    }
+   return x, y;
    }
 
    obtenerMayor(7, 9);
@@ -113,6 +114,7 @@ colors("yellow");
  } else {
    console.log("false");
  }
+ return num;
 }
 
 esDiezOCinco(7);
@@ -126,6 +128,7 @@ esDiezOCinco(7);
     } else {
       console.log("false");
     }
+    return num;
  }
  
 estaEnRango(21);
@@ -144,6 +147,7 @@ estaEnRango(21);
     } else {
       console.log("false");
     }
+    return num;
   }
 
 esEntero(5.8);
@@ -166,6 +170,7 @@ esEntero(5.8);
     } else {
       console.log("false");
     }
+    return num;
  }
 
 fizzBuzz(15);
@@ -192,6 +197,7 @@ fizzBuzz(15);
    } else {
       console.log("false");
    }
+   return num1, num2, num3;
    }
 
    operadoresLogicos(-7, 2, 6);
@@ -226,6 +232,7 @@ esPrimo(2);
     } else{
       console.log("Soy falso");
     }
+    return valor;
  }
  esVerdadero("falso");
 
@@ -244,6 +251,7 @@ Cadena:       n u m
     } else {
       console.log("false");
     }
+    return num;
  }
 
 (tieneTresDigitos(267));
