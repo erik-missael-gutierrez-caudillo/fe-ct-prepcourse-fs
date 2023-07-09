@@ -12,7 +12,7 @@ function obtenerMayor(x, y) {
    } else if (x > y) {
       console.log(x);
    }
-   (x, y);
+   obtenerMayor;
    }
 
    obtenerMayor(7, 9);
@@ -28,7 +28,7 @@ function obtenerMayor(x, y) {
     } else {
     console.log("Not allowed");
     }
-    (edad);
+    mayoriaDeEdad;
    }
    
  mayoriaDeEdad(17);
@@ -48,7 +48,7 @@ function obtenerMayor(x, y) {
    } else {
       console.log("Offline");
    }
-  (status);
+  conection;
  }
 
  conection(1);
@@ -71,7 +71,7 @@ function obtenerMayor(x, y) {
     } else {
       console.log("Hola!");
     }
-    (idioma);
+    saludo;
   }
  
  
@@ -100,7 +100,7 @@ function obtenerMayor(x, y) {
     } else {
       console.log("Color not found");
     }
-(color);
+colors;
  }
 
 colors("blue");
@@ -118,7 +118,7 @@ colors("gris");
  } else {
    console.log("false");
  }
-(num);
+esDiezOCinco;
 }
 
 esDiezOCinco(5);
@@ -133,7 +133,7 @@ esDiezOCinco(7);
     } else {
       console.log("false");
     }
-    (num);
+    estaEnRango;
  }
  
 estaEnRango(21);
@@ -153,7 +153,7 @@ estaEnRango(20);
     } else {
       console.log("false");
     }
-    (num);
+    esEntero;
   }
 
 esEntero(5.8);
@@ -179,7 +179,7 @@ esEntero("a");
     } else {
       console.log("false");
     }
-    num;
+    fizzBuzz;
  }
 
 
@@ -209,6 +209,7 @@ fizzBuzz(9);
       console.log("false");
    }
     (num1, num2, num3);
+    operadoresLogicos;
    }
 
    operadoresLogicos(8, 2, 6);
@@ -235,6 +236,7 @@ fizzBuzz(9);
    console.log("false");
    }
    console.log("true");
+   esPrimo;
  }
  
 esPrimo(2);
@@ -250,7 +252,7 @@ esPrimo(4);
     } else{
       console.log("Soy falso");
     }
-(valor);
+esVerdadero;
 }
  esVerdadero("verdadero");
  esVerdadero("falso");
@@ -270,7 +272,7 @@ Cadena:       n u m
     } else {
       console.log("false");
     }
-(num);
+tieneTresDigitos;
  }
 
 tieneTresDigitos(267);
@@ -288,7 +290,7 @@ tieneTresDigitos(67);
       num += 5;
       i++;
    } while (i < 8);
-   return num;
+   return(num);
  }
  console.log(doWhile(1));
 
