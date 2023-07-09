@@ -29,12 +29,12 @@ function obtenerMayor(x, y) {
       return ("Not allowed");
     }
    }
-   }
+   
 
 
  console.log(mayoriaDeEdad(17));
  console.log(mayoriaDeEdad(19));
-
+ 
  function conection(status) {
     // El argumento "status" representa el estado de conexión de un usuario.
     // Si el estado es igual a 1, el usuario está "Online".
@@ -116,7 +116,7 @@ colors("red");
 colors("green");
 colors("orange");
 colors("gris");
-
+ 
  function esDiezOCinco(num) {
     // Retornar true si "num" es 10 o 5.
     // De lo contrario, retornar false.
@@ -227,7 +227,7 @@ fizzBuzz(17);
    operadoresLogicos(0, 0, 0);
    operadoresLogicos(1, 1, 1);
 
-
+ 
 
 
  
