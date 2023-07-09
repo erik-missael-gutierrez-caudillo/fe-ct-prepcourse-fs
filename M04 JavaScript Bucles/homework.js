@@ -6,13 +6,13 @@ function obtenerMayor(x, y) {
     // Si son iguales, retornar cualquiera de los dos.
     // Tu código:
    if (x === y) {
-      console.log((x || y));
+      console.log(x || y);
    } else if (x < y) {
-      console.log((y));
+      console.log(y);
    } else if (x > y) {
-      console.log((x));
+      console.log(x);
    }
-   console.log(x, y);
+   (x, y);
    }
 
    obtenerMayor(7, 9);
@@ -28,6 +28,7 @@ function obtenerMayor(x, y) {
     } else {
     console.log("Not allowed");
     }
+    (edad);
    }
    
  mayoriaDeEdad(17);
@@ -47,7 +48,7 @@ function obtenerMayor(x, y) {
    } else {
       console.log("Offline");
    }
-   console.log(status);
+  (status);
  }
 
  conection(1);
@@ -70,7 +71,7 @@ function obtenerMayor(x, y) {
     } else {
       console.log("Hola!");
     }
-    console.log(idioma);
+    (idioma);
   }
  
  
@@ -78,13 +79,6 @@ function obtenerMayor(x, y) {
  saludo("mandarin");
  saludo("ingles");
  saludo(" ");
-
-
-
-
-
-
-
 
  function colors(color) {
     // La función recibe un color. Retornar el string correspondiente:
@@ -106,7 +100,7 @@ function obtenerMayor(x, y) {
     } else {
       console.log("Color not found");
     }
-console.log(color);
+(color);
  }
 
 colors("blue");
@@ -124,7 +118,7 @@ colors("gris");
  } else {
    console.log("false");
  }
-console.log(esDiezOCinco);
+(num);
 }
 
 esDiezOCinco(5);
@@ -139,7 +133,7 @@ esDiezOCinco(7);
     } else {
       console.log("false");
     }
-    console.log(num);
+    (num);
  }
  
 estaEnRango(21);
@@ -159,13 +153,13 @@ estaEnRango(20);
     } else {
       console.log("false");
     }
-    console.log(num);
+    (num);
   }
 
 esEntero(5.8);
 esEntero(5);
-esEntero(8);
-esEntero(0);
+esEntero(-8);
+esEntero("a");
 
 
 
@@ -185,11 +179,11 @@ esEntero(0);
     } else {
       console.log("false");
     }
-    console.log(fizzBuzz(num));
+    num;
  }
 
-fizzBuzz(3);
-fizzBuzz(15);
+
+fizzBuzz(9);
 
 
 
@@ -214,7 +208,7 @@ fizzBuzz(15);
    } else {
       console.log("false");
    }
-    console.log(num1, num2, num3);
+    (num1, num2, num3);
    }
 
    operadoresLogicos(8, 2, 6);
@@ -256,7 +250,7 @@ esPrimo(4);
     } else{
       console.log("Soy falso");
     }
-console.log(esVerdadero(valor));
+(valor);
 }
  esVerdadero("verdadero");
  esVerdadero("falso");
@@ -276,7 +270,7 @@ Cadena:       n u m
     } else {
       console.log("false");
     }
-console.log(tieneTresDigitos(num));
+(num);
  }
 
 tieneTresDigitos(267);
@@ -294,9 +288,9 @@ tieneTresDigitos(67);
       num += 5;
       i++;
    } while (i < 8);
-console.log(doWhile(num));
+   return num;
  }
- doWhile(1);
+ console.log(doWhile(1));
 
 
  /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
