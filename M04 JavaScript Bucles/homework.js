@@ -236,7 +236,7 @@ tieneTresDigitos(67);
       num += 5;
       i++;
    } while (i < 8);
-   console.log(num);
+   return(num);
  };
  console.log(doWhile(1));
 
