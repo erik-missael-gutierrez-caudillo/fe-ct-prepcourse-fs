@@ -10,7 +10,7 @@ function obtenerMayor(x, y) {
 };
    obtenerMayor(9, 6);
    obtenerMayor(7, 9);
-   obtenerMayor(8,8);
+   obtenerMayor(8, 8);
  
  function mayoriaDeEdad(edad) {
     // Determinar si la persona puede ingresar al evento según su edad.
@@ -68,10 +68,23 @@ function obtenerMayor(x, y) {
     // Si no es ninguno de esos colores           --> "Color not found".
     // IMPORTANTE: utilizar el statement SWITCH.
     // Tu código:
-    if (color == "blue" || color == "red" || color =="green" || color == "orange")console.log("This is " + color);
-     else console.log("Color not found");
- };
-
+   switch (color){
+   case 'blue':
+      console.log('This is blue');
+      break;
+   case 'red':
+      console.log('This is red');
+      break;
+   case 'green':
+      console.log('This is green');
+      break;
+   case 'orange':
+      'This is orange';
+      break;
+   default:
+      console.log('Color not found');
+   }
+ }
 colors("blue");
 colors(" ");
  
@@ -105,9 +118,9 @@ estaEnRango(20);
     // Ejemplo: (-10) ---> true
     // De lo contrario, retorna false.
     // Tu código:
-    if(Number.isInteger(num)) {
+    if(Number.isInteger(num))
       console.log("true");
-    } else 
+    else 
       console.log("false");
     };
 
@@ -125,13 +138,13 @@ esEntero("a");
     // Si "num" es divisible entre 3 y 5 (ambos), retorna "fizzbuzz".
     // De lo contrario, retorna false.
     // Tu código:
-    if (num % 3 == 0 && num % 5 == 0) {
+    if (num % 3 == 0 && num % 5 == 0) 
       console.log("fizzbuzz");
-    } else if (num % 5 == 0) {
+     else if (num % 5 == 0) 
       console.log("buzz");
-    } else if (num % 3 == 0) {
+     else if (num % 3 == 0) 
       console.log("fizz");
-    } else
+     else
       console.log("false");
      };
 
@@ -197,9 +210,9 @@ esPrimo(4);
     // Si "valor" es verdadero retornar "Soy verdadero".
     // Caso contrario, retornar "Soy falso".
     // Tu código:
-    if(valor === "verdadero"){
+    if(valor === "verdadero")
    console.log("Soy verdadero");
-    } else
+     else
       console.log("Soy falso");
 };
  esVerdadero("verdadero");
@@ -215,9 +228,9 @@ esPrimo(4);
 Cadena:       n u m
 Índices:      0 1 2 3 4 5 6 7 8 9
 */
-    if(num > 99 && num < 1000) {
+    if(num > 99 && num < 1000) 
       console.log("true");
-    } else
+     else
       console.log("false");
    };
 
