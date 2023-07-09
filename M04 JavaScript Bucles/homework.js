@@ -29,6 +29,7 @@ function obtenerMayor(x, y) {
       return ("Not allowed");
     }
    }
+   }
 
 
  console.log(mayoriaDeEdad(17));
