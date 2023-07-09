@@ -12,7 +12,7 @@ function obtenerMayor(x, y) {
    } else if (x > y) {
       console.log((x));
    }
-   return x, y;
+   console.log(x, y);
    }
 
    obtenerMayor(7, 9);
@@ -24,16 +24,14 @@ function obtenerMayor(x, y) {
     // Caso contrario: "Not allowed".
     // Tu código:
     if (edad >= 18) {
-      return("Allowed");
+    console.log("Allowed");
     } else {
-      return ("Not allowed");
+    console.log("Not allowed");
     }
    }
    
-
-
- console.log(mayoriaDeEdad(17));
- console.log(mayoriaDeEdad(19));
+ mayoriaDeEdad(17);
+ mayoriaDeEdad(19);
  
  function conection(status) {
     // El argumento "status" representa el estado de conexión de un usuario.
@@ -49,7 +47,7 @@ function obtenerMayor(x, y) {
    } else {
       console.log("Offline");
    }
-   return status;
+   console.log(status);
  }
 
  conection(1);
@@ -72,14 +70,14 @@ function obtenerMayor(x, y) {
     } else {
       console.log("Hola!");
     }
-    return idioma;
- }
+    console.log(idioma);
+  }
  
  
  saludo("aleman");
  saludo("mandarin");
  saludo("ingles");
- saludo("frances");
+ saludo(" ");
 
 
 
@@ -108,7 +106,7 @@ function obtenerMayor(x, y) {
     } else {
       console.log("Color not found");
     }
-    return color;
+console.log(color);
  }
 
 colors("blue");
@@ -126,7 +124,7 @@ colors("gris");
  } else {
    console.log("false");
  }
- return num;
+console.log(esDiezOCinco);
 }
 
 esDiezOCinco(5);
@@ -141,7 +139,7 @@ esDiezOCinco(7);
     } else {
       console.log("false");
     }
-    return num;
+    console.log(num);
  }
  
 estaEnRango(21);
@@ -161,7 +159,7 @@ estaEnRango(20);
     } else {
       console.log("false");
     }
-    return num;
+    console.log(num);
   }
 
 esEntero(5.8);
@@ -187,13 +185,11 @@ esEntero(0);
     } else {
       console.log("false");
     }
-    return num;
+    console.log(fizzBuzz(num));
  }
 
 fizzBuzz(3);
 fizzBuzz(15);
-fizzBuzz(21);
-fizzBuzz(17);
 
 
 
@@ -218,7 +214,7 @@ fizzBuzz(17);
    } else {
       console.log("false");
    }
-   return num1, num2, num3;
+    console.log(num1, num2, num3);
    }
 
    operadoresLogicos(8, 2, 6);
@@ -260,8 +256,8 @@ esPrimo(4);
     } else{
       console.log("Soy falso");
     }
-    return valor;
- }
+console.log(esVerdadero(valor));
+}
  esVerdadero("verdadero");
  esVerdadero("falso");
 
@@ -280,11 +276,11 @@ Cadena:       n u m
     } else {
       console.log("false");
     }
-    return num;
+console.log(tieneTresDigitos(num));
  }
 
-(tieneTresDigitos(267));
-(tieneTresDigitos(67));
+tieneTresDigitos(267);
+tieneTresDigitos(67);
 
 
  
@@ -298,10 +294,9 @@ Cadena:       n u m
       num += 5;
       i++;
    } while (i < 8);
-   return num;
+console.log(doWhile(num));
  }
-
- console.log(doWhile(1));
+ doWhile(1);
 
 
  /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
