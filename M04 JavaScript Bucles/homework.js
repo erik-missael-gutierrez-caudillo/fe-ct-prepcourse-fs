@@ -9,10 +9,8 @@ function obtenerMayor(x, y) {
       console.log(x || y);
    } else if (x < y) {
       console.log(y);
-   } else if (x > y) {
+   } else if (x > y)
       console.log(x);
-   }
-   obtenerMayor;
    }
 
    obtenerMayor(7, 9);
@@ -25,10 +23,8 @@ function obtenerMayor(x, y) {
     // Tu código:
     if (edad >= 18) {
     console.log("Allowed");
-    } else {
+    } else
     console.log("Not allowed");
-    }
-    mayoriaDeEdad;
    }
    
  mayoriaDeEdad(17);
@@ -45,10 +41,8 @@ function obtenerMayor(x, y) {
       console.log("Online");
    } else if (status == 2) {
       console.log("Away");
-   } else {
+   } else
       console.log("Offline");
-   }
-  conection;
  }
 
  conection(1);
@@ -68,10 +62,8 @@ function obtenerMayor(x, y) {
       console.log("Ni Hao!");
     }else if (idioma == "ingles") {
       console.log("Hello!")
-    } else {
+    } else
       console.log("Hola!");
-    }
-    saludo;
   }
  
  
@@ -97,10 +89,8 @@ function obtenerMayor(x, y) {
       console.log("This is green");
     }else if (color == "orange") {
       console.log("This is orange");
-    } else {
+    } else 
       console.log("Color not found");
-    }
-colors;
  }
 
 colors("blue");
@@ -130,11 +120,9 @@ esDiezOCinco(7);
     // Tu código:
     if (num < 50 && num > 20) {
       console.log("true");
-    } else {
+    } else
       console.log("false");
-    }
-    estaEnRango;
- }
+     }
  
 estaEnRango(21);
 estaEnRango(20);
@@ -150,11 +138,9 @@ estaEnRango(20);
     // Tu código:
     if(Number.isInteger(num)) {
       console.log("true");
-    } else {
+    } else 
       console.log("false");
     }
-    esEntero;
-  }
 
 esEntero(5.8);
 esEntero(5);
@@ -170,21 +156,20 @@ esEntero("a");
     // Si "num" es divisible entre 3 y 5 (ambos), retorna "fizzbuzz".
     // De lo contrario, retorna false.
     // Tu código:
-    if (num % 3 == 0) {
-      console.log("fizz");
+    if (num % 3 == 0 && num % 5 == 0) {
+      console.log("fizzbuzz");
     } else if (num % 5 == 0) {
       console.log("buzz");
-    } else if (num % 3 == 0 && num % 5 == 0) {
-      console.log("fizzbuzz");
-    } else {
+    } else if (num % 3 == 0) {
+      console.log("fizz");
+    } else
       console.log("false");
-    }
-    fizzBuzz;
- }
+     }
 
 
 fizzBuzz(9);
-
+fizzBuzz(10);
+fizzBuzz(15);
 
 
  
@@ -205,12 +190,9 @@ fizzBuzz(9);
       return(num3 * 2);
    } else if (num1, num2, num3 == 0) {
       console.log("Error");
-   } else {
+   } else 
       console.log("false");
-   }
-    (num1, num2, num3);
-    operadoresLogicos;
-   }
+      }
 
    operadoresLogicos(8, 2, 6);
    operadoresLogicos(-7, 2, 6);
@@ -236,7 +218,6 @@ fizzBuzz(9);
    console.log("false");
    }
    console.log("true");
-   esPrimo;
  }
  
 esPrimo(2);
@@ -249,10 +230,8 @@ esPrimo(4);
     // Tu código:
     if(valor === "verdadero"){
    console.log("Soy verdadero");
-    } else{
+    } else
       console.log("Soy falso");
-    }
-esVerdadero;
 }
  esVerdadero("verdadero");
  esVerdadero("falso");
@@ -269,11 +248,9 @@ Cadena:       n u m
 */
     if(num > 99 && num < 1000) {
       console.log("true");
-    } else {
+    } else
       console.log("false");
-    }
-tieneTresDigitos;
- }
+   }
 
 tieneTresDigitos(267);
 tieneTresDigitos(67);
@@ -290,9 +267,9 @@ tieneTresDigitos(67);
       num += 5;
       i++;
    } while (i < 8);
-   return(num);
+   console.log(num);
  }
- console.log(doWhile(1));
+ doWhile(1);
 
 
  /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
