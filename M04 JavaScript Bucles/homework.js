@@ -5,25 +5,26 @@ function obtenerMayor(x, y) {
     // Retornar el número más grande.
     // Si son iguales, retornar cualquiera de los dos.
     // Tu código:
-   if(x > y || x == y)console.log(x);
-   else console.log(y);
+   if(x > y || x == y)return(x);
+   else return(y);
 };
-   obtenerMayor(9, 6);
-   obtenerMayor(7, 9);
-   obtenerMayor(8, 8);
- 
+console.log(obtenerMayor(9, 6)); 
+console.log(obtenerMayor(3, 3)); 
+
+
  function mayoriaDeEdad(edad) {
     // Determinar si la persona puede ingresar al evento según su edad.
     // Si tiene 18 años ó más debe retornar el string: "Allowed".
     // Caso contrario: "Not allowed".
     // Tu código:
-    if (edad >= 18)console.log("Allowed");
-    else console.log("Not allowed");
+    if (edad >= 18)return("Allowed");
+    else return("Not allowed");
    };
    
- mayoriaDeEdad(17);
- mayoriaDeEdad(19);
- 
+console.log(mayoriaDeEdad(19));
+console.log(mayoriaDeEdad(17));
+
+
  function conection(status) {
     // El argumento "status" representa el estado de conexión de un usuario.
     // Si el estado es igual a 1, el usuario está "Online".
@@ -31,14 +32,15 @@ function obtenerMayor(x, y) {
     // De lo contrario, presumimos que el usuario está "Offline".
     // Retornar el estado de conexión del usuario.
     // Tu código:
-    if(status == 1)console.log("Online");
-    else if(status == 2)console.log("Away");
-    else console.log("Offline");
+    if(status == 1)return("Online");
+    else if(status == 2)return("Away");
+    else return("Offline");
  };
 
- conection(1);
- conection(2);
- conection(3);
+console.log( conection(1));
+console.log( conection(2));
+console.log( conection(3));
+
 
  function saludo(idioma) {
     // Retornar un saludo en tres diferentes lenguajes:
@@ -47,17 +49,16 @@ function obtenerMayor(x, y) {
     // Si "idioma" es "ingles", devuelve "Hello!".
     // Si "idioma" no es ninguno de los anteriores o es `undefined` devuelve "Hola!".
     // Tu código:
-    if(idioma == "aleman")console.log("Guten Tag!");
-    else if (idioma == "mandarin")console.log("Ni Hao!");
-    else if (idioma == "ingles")console.log("Hello!")
-    else console.log("Hola!");
+    if(idioma == "aleman")return("Guten Tag!");
+    else if (idioma == "mandarin")return("Ni Hao!");
+    else if (idioma == "ingles")return("Hello!")
+    else return("Hola!");
   };
- 
- 
- saludo("aleman");
- saludo("mandarin");
- saludo("ingles");
- saludo(" ");
+ console.log(saludo("aleman"));
+ console.log(saludo("mandarin"));
+ console.log(saludo("ingles"));
+ console.log(saludo(""));
+
 
  function colors(color) {
     // La función recibe un color. Retornar el string correspondiente:
@@ -70,44 +71,41 @@ function obtenerMayor(x, y) {
     // Tu código:
    switch (color){
    case 'blue':
-      console.log('This is blue');
       break;
    case 'red':
-      console.log('This is red');
       break;
    case 'green':
-      console.log('This is green');
       break;
    case 'orange':
-      'This is orange';
       break;
    default:
-      console.log('Color not found');
+      return('Color not found');
    }
+   return ("This is " + color);
  }
-colors("blue");
-colors(" ");
+console.log(colors("blue"));
+console.log(colors(" "));
  
  function esDiezOCinco(num) {
     // Retornar true si "num" es 10 o 5.
     // De lo contrario, retornar false.
     // Tu código:
-   if (num == 5 || num == 10)console.log("true");
-   else console.log("false");
+   if (num == 5 || num == 10)return("true");
+   else return("false");
 };
-esDiezOCinco(5);
-esDiezOCinco(7);
+console.log(esDiezOCinco(5));
+console.log(esDiezOCinco(7));
 
  function estaEnRango(num) {
     // Retornar true si "num" es menor que 50 y mayor que 20.
     // De lo contrario, retornar false.
     // Tu código:
-    if (num < 50 && num > 20)console.log("true");
-     else console.log("false");
+    if (num < 50 && num > 20)return("true");
+     else return("false");
      };
  
-estaEnRango(21);
-estaEnRango(20);
+console.log(estaEnRango(21));
+console.log(estaEnRango(20));
 
 
 
@@ -119,15 +117,15 @@ estaEnRango(20);
     // De lo contrario, retorna false.
     // Tu código:
     if(Number.isInteger(num))
-      console.log("true");
+      return("true");
     else 
-      console.log("false");
+      return("false");
     };
 
-esEntero(5.8);
-esEntero(5);
-esEntero(-8);
-esEntero("a");
+console.log(esEntero(5.8));
+console.log(esEntero(5));
+console.log(esEntero(-8));
+console.log(esEntero("a"));
 
 
 
@@ -139,19 +137,19 @@ esEntero("a");
     // De lo contrario, retorna false.
     // Tu código:
     if (num % 3 == 0 && num % 5 == 0) 
-      console.log("fizzbuzz");
+      return("fizzbuzz");
      else if (num % 5 == 0) 
-      console.log("buzz");
+      return("buzz");
      else if (num % 3 == 0) 
-      console.log("fizz");
+      return("fizz");
      else
-      console.log("false");
+      return("false");
      };
 
-fizzBuzz(9);
-fizzBuzz(10);
-fizzBuzz(15);
-fizzBuzz(19);
+console.log(fizzBuzz(9));
+console.log(fizzBuzz(10));
+console.log(fizzBuzz(15));
+console.log(fizzBuzz(19));
 
 
  
@@ -164,23 +162,23 @@ fizzBuzz(19);
     // Si no se cumple ninguna de las condiciones anteriores, retornar false.
     // Tu código:
    if (num1 > num2 && num1 > num3 && Number.isInteger(num1)) {
-      console.log("Numero 1 es mayor y positivo");
+      return("Numero 1 es mayor y positivo");
    } else if (num1 < 0 || num2 < 0 ||
       +  num3 < 0) {
-      console.log("Hay negativos");
+      return("Hay negativos");
    } else if (num3 > num2 && num3 > num1) {
       return(num3 * 2);
    } else if (num1, num2, num3 == 0) {
-      console.log("Error");
+      return("Error");
    } else 
-      console.log("false");
+      return("false");
       };
 
-   operadoresLogicos(8, 2, 6);
-   operadoresLogicos(-7, 2, 6);
-   operadoresLogicos(1, 2, 6);
-   operadoresLogicos(0, 0, 0);
-   operadoresLogicos(1, 1, 1);
+   console.log(operadoresLogicos(8, 2, 6));
+   console.log(operadoresLogicos(-7, 2, 6));
+   console.log(operadoresLogicos(1, 2, 6));
+   console.log(operadoresLogicos(0, 0, 0));
+   console.log(operadoresLogicos(1, 1, 1));
 
  
 
@@ -194,16 +192,16 @@ fizzBuzz(19);
     // [Nota]: los números negativos, 0 y 1 NO son números primos.
     // Tu código:
    if(num == 0 || num == 1 || num == 4) 
-      console.log("false");
+      return("false");
    for (var x = 2; x < num / 2; x++) {
       if (num % x === 0) 
-   console.log("false");
+   return("false");
    }
-   console.log("true");
+   return("true");
  };
  
-esPrimo(2);
-esPrimo(4);
+console.log(esPrimo(2));
+console.log(esPrimo(4));
 
 
  function esVerdadero(valor) {
@@ -211,12 +209,12 @@ esPrimo(4);
     // Caso contrario, retornar "Soy falso".
     // Tu código:
     if(valor === "verdadero")
-   console.log("Soy verdadero");
+   return("Soy verdadero");
      else
-      console.log("Soy falso");
+   return("Soy falso");
 };
- esVerdadero("verdadero");
- esVerdadero("falso");
+ console.log(esVerdadero("verdadero"));
+ console.log(esVerdadero("falso"));
 
 
 
@@ -229,13 +227,13 @@ Cadena:       n u m
 Índices:      0 1 2 3 4 5 6 7 8 9
 */
     if(num > 99 && num < 1000) 
-      console.log("true");
+      return("true");
      else
-      console.log("false");
+      return("false");
    };
 
-tieneTresDigitos(267);
-tieneTresDigitos(67);
+console.log(tieneTresDigitos(267));
+console.log(tieneTresDigitos(67));
 
 
  
