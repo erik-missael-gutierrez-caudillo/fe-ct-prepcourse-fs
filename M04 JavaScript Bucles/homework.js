@@ -5,8 +5,8 @@ function obtenerMayor(x, y) {
     // Retornar el número más grande.
     // Si son iguales, retornar cualquiera de los dos.
     // Tu código:
-   if(x > y || x == y)return(x);
-   else return(y);
+   if(x > y || x == y)return x;
+   else return y;
 };
 console.log(obtenerMayor(9, 6)); 
 console.log(obtenerMayor(3, 3)); 
@@ -17,8 +17,8 @@ console.log(obtenerMayor(3, 3));
     // Si tiene 18 años ó más debe retornar el string: "Allowed".
     // Caso contrario: "Not allowed".
     // Tu código:
-    if (edad >= 18)return("Allowed");
-    else return("Not allowed");
+    if(edad >= 18) return "Allowed";
+    else return "Not Allowed";
    };
    
 console.log(mayoriaDeEdad(19));
@@ -32,14 +32,14 @@ console.log(mayoriaDeEdad(17));
     // De lo contrario, presumimos que el usuario está "Offline".
     // Retornar el estado de conexión del usuario.
     // Tu código:
-    if(status == 1)return("Online");
-    else if(status == 2)return("Away");
-    else return("Offline");
+    if(status == 1)return 'Online';
+    else if(status == 2)return 'Away';
+    else return 'Offline';
  };
 
-console.log( conection(1));
-console.log( conection(2));
-console.log( conection(3));
+console.log(conection(1));
+console.log(conection(2));
+console.log(conection(3));
 
 
  function saludo(idioma) {
@@ -49,10 +49,10 @@ console.log( conection(3));
     // Si "idioma" es "ingles", devuelve "Hello!".
     // Si "idioma" no es ninguno de los anteriores o es `undefined` devuelve "Hola!".
     // Tu código:
-    if(idioma == "aleman")return("Guten Tag!");
-    else if (idioma == "mandarin")return("Ni Hao!");
-    else if (idioma == "ingles")return("Hello!")
-    else return("Hola!");
+    if(idioma == "aleman")return "Guten Tag!";
+    else if (idioma == "mandarin")return "Ni Hao!";
+    else if (idioma == "ingles")return "Hello!";
+    else return "Hola!";
   };
  console.log(saludo("aleman"));
  console.log(saludo("mandarin"));
@@ -79,9 +79,9 @@ console.log( conection(3));
    case 'orange':
       break;
    default:
-      return('Color not found');
+      return 'Color not found';
    }
-   return ("This is " + color);
+   return 'This is ' + color;
  }
 console.log(colors("blue"));
 console.log(colors(" "));
@@ -90,8 +90,8 @@ console.log(colors(" "));
     // Retornar true si "num" es 10 o 5.
     // De lo contrario, retornar false.
     // Tu código:
-   if (num == 5 || num == 10)return("true");
-   else return("false");
+   if (num == 5 || num == 10)return true;
+   else return false;
 };
 console.log(esDiezOCinco(5));
 console.log(esDiezOCinco(7));
@@ -100,8 +100,8 @@ console.log(esDiezOCinco(7));
     // Retornar true si "num" es menor que 50 y mayor que 20.
     // De lo contrario, retornar false.
     // Tu código:
-    if (num < 50 && num > 20)return("true");
-     else return("false");
+    if (num < 50 && num > 20)return true;
+     else return false;
      };
  
 console.log(estaEnRango(21));
@@ -117,9 +117,9 @@ console.log(estaEnRango(20));
     // De lo contrario, retorna false.
     // Tu código:
     if(Number.isInteger(num))
-      return("true");
+      return true;
     else 
-      return("false");
+      return false;
     };
 
 console.log(esEntero(5.8));
@@ -137,13 +137,13 @@ console.log(esEntero("a"));
     // De lo contrario, retorna false.
     // Tu código:
     if (num % 3 == 0 && num % 5 == 0) 
-      return("fizzbuzz");
+      return 'fizzbuzz';
      else if (num % 5 == 0) 
-      return("buzz");
+      return 'buzz';
      else if (num % 3 == 0) 
-      return("fizz");
+      return 'fizz';
      else
-      return("false");
+      return 'false';
      };
 
 console.log(fizzBuzz(9));
@@ -162,16 +162,16 @@ console.log(fizzBuzz(19));
     // Si no se cumple ninguna de las condiciones anteriores, retornar false.
     // Tu código:
    if (num1 > num2 && num1 > num3 && Number.isInteger(num1)) {
-      return("Numero 1 es mayor y positivo");
+      return "Numero 1 es mayor y positivo";
    } else if (num1 < 0 || num2 < 0 ||
       +  num3 < 0) {
-      return("Hay negativos");
+      return "Hay negativos";
    } else if (num3 > num2 && num3 > num1) {
-      return(num3 * 2);
+      return num3 * 2;
    } else if (num1, num2, num3 == 0) {
-      return("Error");
+      return "Error";
    } else 
-      return("false");
+      return "false";
       };
 
    console.log(operadoresLogicos(8, 2, 6));
@@ -192,12 +192,12 @@ console.log(fizzBuzz(19));
     // [Nota]: los números negativos, 0 y 1 NO son números primos.
     // Tu código:
    if(num == 0 || num == 1 || num == 4) 
-      return("false");
+      return "false";
    for (var x = 2; x < num / 2; x++) {
       if (num % x === 0) 
-   return("false");
+   return "false";
    }
-   return("true");
+   return "true";
  };
  
 console.log(esPrimo(2));
@@ -209,9 +209,9 @@ console.log(esPrimo(4));
     // Caso contrario, retornar "Soy falso".
     // Tu código:
     if(valor === "verdadero")
-   return("Soy verdadero");
+   return "Soy verdadero";
      else
-   return("Soy falso");
+   return "Soy falso";
 };
  console.log(esVerdadero("verdadero"));
  console.log(esVerdadero("falso"));
@@ -227,9 +227,9 @@ Cadena:       n u m
 Índices:      0 1 2 3 4 5 6 7 8 9
 */
     if(num > 99 && num < 1000) 
-      return("true");
+      return "true";
      else
-      return("false");
+      return "false";
    };
 
 console.log(tieneTresDigitos(267));
@@ -247,7 +247,7 @@ console.log(tieneTresDigitos(67));
       num += 5;
       i++;
    } while (i < 8);
-   return(num);
+   return num;
  };
  console.log(doWhile(1));
 
